@@ -1,0 +1,21 @@
+### 新增person
+POST {{host}}/person
+Content-Type: application/json
+
+{
+  "age": 20,
+  "name": "刘某",
+  "profile": "测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试"
+}
+
+
+### 根据ID获取person
+GET {{host}}/person/1
+Accept: application/json
+Cache-Control: no-cache
+
+### 根据Name获取
+GET {{host}}/person?name=刘某
+Accept: application/json
+
+
