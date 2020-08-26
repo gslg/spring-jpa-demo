@@ -10,7 +10,7 @@ Content-Type: application/json
 
 
 ### 根据ID获取person
-GET {{host}}/person/1
+GET {{host}}/person/2
 Accept: application/json
 Cache-Control: no-cache
 

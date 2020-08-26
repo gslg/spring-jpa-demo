@@ -1,0 +1,68 @@
+### 保存学生
+POST {{host}}/student
+Content-Type: application/json
+
+{
+  "name": "lg",
+  "age": 20
+}
+
+### 根据ID查询
+GET {{host}}/student/5
+Accept: application/json
+
+### 保存课程
+POST {{host}}/course
+Content-Type: application/json
+
+{
+  "name": "化学"
+}
+
+### 根据ID查询课程
+GET {{host}}/course/2
+Accept: application/json
+
+### 创建学生以及喜欢的课程
+POST {{host}}/student
+Content-Type: application/json
+
+{
+  "name": "bob",
+  "age": 22,
+  "likedCourses": [
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ]
+}
+
+### 更新学生以
+PUT {{host}}/student/5
+Content-Type: application/json
+
+{
+  "name": "lg256",
+  "age": 18
+}
+
+### 添加课程
+POST {{host}}/student/5/course
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "物理"
+}
+
+### 删除课程
+DELETE {{host}}/student/5/course
+Content-Type: application/json
+
+{
+  "id": 2,
+  "name": "物理"
+}

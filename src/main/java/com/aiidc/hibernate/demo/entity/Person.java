@@ -1,6 +1,7 @@
 package com.aiidc.hibernate.demo.entity;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
@@ -8,7 +9,8 @@ import java.time.LocalDateTime;
 
 @Table(name = "person")
 @Entity
-@Data
+@Getter
+@Setter
 public class Person extends BaseIDEntity {
 
     private String name;
